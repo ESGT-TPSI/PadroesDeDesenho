@@ -30,7 +30,17 @@ public class TestUnit {
 			fail("Uma mota tem que ter duas rodas");
 		}
 	}
-	
+	@Test
+	public void VerificaRodasCarro() throws Exception {
+		
+		var carros= new Garagem();
+		var carro = carros.criarCarro(TipoVeiculo.Carro, "12-12-ZZ");
+		
+		if(carro.Rodas<4)
+		{
+			fail("Um Carro tem que ter 4 rodas");
+		}
+	}
 	
 
 	@Test

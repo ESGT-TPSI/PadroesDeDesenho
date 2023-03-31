@@ -15,7 +15,7 @@ public class Garagem {
 	public Veiculo criarCarro(TipoVeiculo tipoVeiculo, String Matricula) throws Exception
 	{
 		var peso=9999;
-		var rodas=0;
+		var rodas=2;
 		var cor = "Branco";
 		switch(tipoVeiculo) {
 		  case Pesado:
@@ -32,6 +32,7 @@ public class Garagem {
 		    break;
 		  default:
 			  peso= 3500;
+			  break;
 		}
 		
 		if(!MatriculaValida(Matricula))
