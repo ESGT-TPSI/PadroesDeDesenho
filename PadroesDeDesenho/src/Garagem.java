@@ -12,7 +12,7 @@ public class Garagem {
 		carros.add(carro);
 	}
 	
-	public Veiculo criarCarro(TipoVeiculo tipoVeiculo, String Matricula)
+	public Veiculo criarCarro(TipoVeiculo tipoVeiculo, String Matricula) throws Exception
 	{
 		var peso=9999;
 		var rodas=0;
@@ -46,7 +46,7 @@ public class Garagem {
 	
 	public boolean MatriculaValida(String matricula)
 	{
-		return false;
+		return true;
 	}
 
 	
